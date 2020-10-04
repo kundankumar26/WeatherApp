@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBE0EA"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="66dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/enter_city_name"
+        android:textColor="@color/text_color"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/weatherinfo_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="127dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/city_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/text_color"
+        android:textColorHint="#99000000"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/weatherinfo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="193dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="getWeatherInfo"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/search"
+        android:textColor="@color/button_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/weatherinfo_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="110dp"
+        android:lineSpacingExtra="10dp"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="normal" />
+</RelativeLayout>
